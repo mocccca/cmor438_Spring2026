@@ -45,7 +45,7 @@ The goal is to compare whether simple linear models or more complex models bette
 
 ### Results
 
-##### Classification Results
+#### Classification Results
 | Outcome | Model | Accuracy | Precision | Recall | F1 Macro |
 |---|---|---:|---:|---:|---:|
 | CWB | Logistic Regression | 0.50 | 0.500 | 0.496 | 0.482 |
@@ -53,7 +53,7 @@ The goal is to compare whether simple linear models or more complex models bette
 | OCB | Logistic Regression | 0.40 | 0.352 | 0.378 | 0.351 |
 | OCB | Perceptron | 0.38 | 0.365 | 0.372 | 0.365 |
 
-##### Regression Results
+#### Regression Results
 | Outcome | Model | MAE | RMSE | R² |
 |---|---|---:|---:|---:|
 | CWB | Linear Regression | 0.336 | 0.442 | 0.183 |
@@ -91,7 +91,7 @@ The goal is to compare which modeling approaches best extract personality-releva
 
 ### Results
 
-##### Pearson's r Comparison Across Algorithms
+#### Pearson's r Comparison Across Algorithms
 
 | Trait | Decision Tree | Gradient Boosting | KNN | Random Forest | Linear SVR | RBF SVR |
 |---|---:|---:|---:|---:|---:|---:|

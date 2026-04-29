@@ -14,7 +14,8 @@ _Supervised Learning_
 - K Nearest Neighbors
 - Decision Trees / Regression Trees
 - Random Forests
-- Other Ensemble Methods, including Boosting
+- Linear and Non-linear SVR
+- Other Ensemble Methods, e.g., Boosting
 
 _Unsupervised Learning_
 - K-Means Clustering
@@ -23,7 +24,7 @@ _Unsupervised Learning_
 
 **Dataset**
 
-All data are from a dataset on life narratives and personlity assessments, which contains responses from 500 participants. Features include...
+All data are from a dataset on life narratives and personlity assessments, which contains responses from 500 participants. Features include Big Five personality measures, organizational behaviors (organizational citizenship behaviors, counterwork behaviors) and personal narrative data.
 
 ⚠️ *Confidentiality*: This data is protected for academic use only. Unauthorized redistribution or commercial use is prohibited.
 
