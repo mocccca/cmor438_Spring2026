@@ -95,11 +95,11 @@ The goal is to compare which modeling approaches best extract personality-releva
 
 | Trait | Decision Tree | Gradient Boosting | KNN | Random Forest | Linear SVR | RBF SVR |
 |---|---:|---:|---:|---:|---:|---:|
-| Extraversion | -0.0036 | 0.1857 | 0.2233 | 0.2981 | 0.3272 | **0.3667** |
-| Agreeableness | -0.0138 | 0.0197 | 0.0046 | 0.0296 | 0.1072 | **0.1234** |
-| Conscientiousness | 0.2035 | 0.2730 | 0.1855 | 0.2916 | 0.2948 | **0.3531** |
-| Neuroticism | 0.1248 | 0.2551 | 0.2039 | 0.2601 | 0.3672 | **0.3885** |
-| Openness | 0.0436 | 0.1591 | 0.1672 | 0.1396 | 0.2600 | **0.3416** |
+| Extraversion | 0.1297 | 0.1857 | 0.2233 | 0.2981 | 0.3272 | **0.3667** |
+| Agreeableness | -0.0353 | 0.0197 | 0.0046 | 0.0296 | 0.1072 | **0.1234** |
+| Conscientiousness | 0.0737 | 0.2730 | 0.1855 | 0.2916 | 0.2948 | **0.3531** |
+| Neuroticism | 0.1024 | 0.2551 | 0.2039 | 0.2601 | 0.3672 | **0.3885** |
+| Openness | 0.0452 | 0.1591 | 0.1672 | 0.1396 | 0.2600 | **0.3416** |
 
 Narrative text data was able to predict personality traits, but performance varied substantially across traits and algorithms. Pearson's r was mainly assessed to determine the convergent validity of the algorithms with self-report Big Five assessments, as convergent validity is how prediction performance is assessed in psychology.
 
