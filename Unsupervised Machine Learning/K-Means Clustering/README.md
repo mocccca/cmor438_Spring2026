@@ -48,32 +48,37 @@ A **K=3 sensitivity analysis** was also conducted to explore whether a three-clu
 ## Results
 
 ### Cluster Sizes
+
 | Cluster | n | % |
-|---|---|---|
-| 0 — Stressed/Disengaged | 315 | 63% |
-| 1 — Adjusted/Prosocial | 185 | 37% |
+|---|---:|---:|
+| 0 — Adjusted/Prosocial | 222 | 44.4% |
+| 1 — Younger/Stressed | 278 | 55.6% |
+
 
 ### Cluster Profiles
 
 | Trait | Cluster 0 | Cluster 1 |
-|---|---|---|
-| Extraversion | 2.88 | 3.69 |
-| Agreeableness | 3.57 | 4.16 |
-| Conscientiousness | 3.31 | 4.21 |
-| Neuroticism | 3.23 | 2.27 |
-| Openness | 3.66 | 4.12 |
-| OCB | 2.62 | 3.02 |
-| CWB | 1.68 | 1.40 |
+|---|---:|---:|
+| Extraversion | 3.69 | 2.88 |
+| Agreeableness | 4.16 | 3.57 |
+| Conscientiousness | 4.21 | 3.31 |
+| Neuroticism | 2.27 | 3.23 |
+| Openness | 4.12 | 3.66 |
+| OCB | 3.02 | 2.62 |
+| CWB | 1.40 | 1.68 |
 
-**Cluster 0 — "Stressed/Disengaged"**  
-Lower scores on all positive Big Five traits, elevated Neuroticism (3.23) and CWB (1.68), lower OCB (2.62). Mean age 25.1 years, 56.8% women.
 
-**Cluster 1 — "Adjusted/Prosocial"**  
-Higher Conscientiousness (4.21), Agreeableness (4.16), and Extraversion (3.69), markedly lower Neuroticism (2.27), higher OCB (3.02), lower CWB (1.40). Mean age 30.5 years, more gender-balanced (48.6% women).
+**Cluster 0 — "Adjusted/Prosocial"**  
+Higher Conscientiousness (4.21), Agreeableness (4.16), Extraversion (3.69), and OCB (3.02), alongside markedly lower Neuroticism (2.27) and CWB (1.40). This cluster appears more emotionally stable, cooperative, and organizationally engaged. Participants in this cluster were also older on average (M = 29.82 years), suggesting a potentially more mature and socially adjusted profile.
+
+**Cluster 1 — "Younger/Stressed"**  
+Lower scores across positive Big Five traits and elevated Neuroticism (3.23) and CWB (1.68), along with lower OCB (2.62). This cluster may reflect a comparatively more emotionally strained or disengaged profile. Participants were younger on average (M = 24.98 years), potentially reflecting developmental differences in personality stability and workplace adjustment.
+
 
 ### Age & Gender Differences
-- Cluster 1 participants were on average **5.4 years older** than Cluster 0, consistent with the **maturity principle** in personality development — Conscientiousness and Agreeableness tend to increase while Neuroticism decreases across adulthood (Roberts et al., 2006)
-- Cluster 0 skewed more female (56.8% vs 48.6%), consistent with well-replicated small gender differences in Neuroticism
+
+- Cluster 0 participants were on average approximately **4.8 years older** than Cluster 1, consistent with the **maturity principle** in personality development, where Conscientiousness and Agreeableness tend to increase while Neuroticism decreases across adulthood (Roberts et al., 2006).
+- Gender distributions were relatively balanced across clusters, though Cluster 1 showed a somewhat higher proportion of women (56.8%) compared with Cluster 0 (50.0%), which may align with commonly observed small gender differences in Neuroticism.
 
 ---
 
