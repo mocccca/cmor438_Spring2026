@@ -52,6 +52,21 @@ It is also interpretable and stable on moderate sample sizes.
 
 ---
 
+## Imported Libraries
+
+* pandas
+* scikit-learn
+    * train_test_split
+    * StandardScaler
+    * LogisticRegression
+    * Pipeline
+    * accuracy_score
+    * precision_score
+    * recall_score
+    * f1_score
+    * classification_report
+    * confusion_matrix
+
 ## Pipeline
 
 The workflow used in this notebook is:

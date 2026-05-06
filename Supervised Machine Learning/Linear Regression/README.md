@@ -46,7 +46,16 @@ This makes it a strong baseline model for testing whether personality traits are
 
 ---
 
+## Imported Libraries
 
+* pandas
+* numpy
+* scikit-learn
+    * train_test_split
+    * LinearRegression
+    * mean_absolute_error
+    * mean_squared_error
+    * r2_score
 
 
 ## Pipeline

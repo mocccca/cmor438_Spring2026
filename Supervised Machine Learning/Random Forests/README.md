@@ -55,7 +55,7 @@ The package includes reusable methods for:
 - cross-validation
 - feature importance visualization
 
-Imported Libraries
+### Imported Libraries
 
 This project also uses:
 
@@ -71,7 +71,7 @@ This project also uses:
 
 ⸻
 
-References
+## References
 
 * Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Grisel, O., … & Duchesnay, E. (2011). Scikit-learn: Machine learning in Python. Journal of Machine Learning Research, 12, 2825–2830.
 * Breiman, L. (2001). Random forests. Machine Learning, 45(1), 5–32.

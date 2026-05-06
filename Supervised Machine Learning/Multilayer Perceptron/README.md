@@ -50,6 +50,19 @@ A neural network can learn these nonlinear combinations automatically.
 
 ---
 
+## Imported Libraries
+
+* pandas
+* numpy
+* scikit-learn
+    * train_test_split
+    * StandardScaler
+    * MLPRegressor
+    * Pipeline
+    * mean_absolute_error
+    * mean_squared_error
+    * r2_score
+
 ## Pipeline
 
 The workflow used in this notebook is:
