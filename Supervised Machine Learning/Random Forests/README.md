@@ -69,7 +69,6 @@ This project also uses:
     * KFold
 * matplotlib
 
-⸻
 
 ## References
 

@@ -19,7 +19,6 @@ The outcomes are:
 
 Because CWB and OCB are continuous scores, this is a regression problem.
 
----
 
 ## What is Linear Regression?
 
@@ -44,7 +43,6 @@ Linear Regression is appropriate here because:
 
 This makes it a strong baseline model for testing whether personality traits are related to workplace behavior.
 
----
 
 ## Imported Libraries
 
@@ -79,6 +77,7 @@ The workflow used in this notebook is:
     * RMSE
     * R²
 8. Inspect coefficients to understand which traits matter most.
+
 
 ## Interpretation
 

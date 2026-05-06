@@ -19,7 +19,6 @@ The outcomes are categorized into:
 
 This is a classification task.
 
----
 
 # What is Logistic Regression?
 
@@ -50,7 +49,6 @@ Logistic regression works well when relationships are relatively linear and pred
 
 It is also interpretable and stable on moderate sample sizes.
 
----
 
 ## Imported Libraries
 
@@ -88,7 +86,6 @@ The workflow used in this notebook is:
     * Macro F1
     * Confusion Matrix
 
----
 
 ## Interpretation
 

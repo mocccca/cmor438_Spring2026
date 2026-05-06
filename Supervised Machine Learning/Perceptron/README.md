@@ -19,7 +19,6 @@ Outcomes:
 
 This is a classification problem.
 
----
 
 ## What is a Perceptron?
 
@@ -35,7 +34,6 @@ When it makes mistakes, it updates the weights to improve future predictions.
 
 It is one of the earliest machine learning algorithms and forms the basis of neural networks.
 
----
 
 ## Why It Works for This Case
 
@@ -45,7 +43,6 @@ It tests whether a simple linear decision boundary is enough to separate low, me
 
 Because it is simple and fast, it provides a benchmark for more advanced models.
 
----
 
 ## Imported Libraries
 
@@ -83,7 +80,6 @@ The workflow used in this notebook is:
     * Macro F1
     * Confusion Matrix
 
----
 
 ## Interpretation
 

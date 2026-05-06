@@ -19,7 +19,6 @@ The outcomes are:
 
 Because the outcomes are continuous scores, this is a regression task.
 
----
 
 ## What is a Multilayer Perceptron?
 
@@ -35,7 +34,6 @@ Each node applies weights and nonlinear transformations to learn relationships i
 
 Unlike linear regression, MLP can model nonlinear and interaction effects.
 
----
 
 ## Why It Works for This Case
 
@@ -48,7 +46,6 @@ Examples:
 
 A neural network can learn these nonlinear combinations automatically.
 
----
 
 ## Imported Libraries
 
@@ -80,7 +77,6 @@ The workflow used in this notebook is:
    - R²
 9. Compare performance against Linear Regression.
 
----
 
 ## Interpretation
 
