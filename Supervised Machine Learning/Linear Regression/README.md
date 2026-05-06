@@ -46,6 +46,9 @@ This makes it a strong baseline model for testing whether personality traits are
 
 ---
 
+
+
+
 ## Pipeline
 
 The workflow used in this notebook is:
@@ -67,8 +70,6 @@ The workflow used in this notebook is:
     * RMSE
     * R²
 8. Inspect coefficients to understand which traits matter most.
-
----
 
 ## Interpretation
 

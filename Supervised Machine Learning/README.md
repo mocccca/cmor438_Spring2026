@@ -117,7 +117,7 @@ The weakest prediction was consistently found for:
 
 This suggests that agreeableness may be less visible in word usage alone or that the narrative prompts were not designed to capture agreeableness directly.
 
-Among all methods tested, **Support Vector Regression (especially non-linear SVR)** performed best overall, outperforming tree-based and distance-based models on all traits. This suggests that support vector methods are particularly effective for high-dimensional text data, and that nonlinear kernels can capture subtle language patterns related to personality differences.
+Among all methods tested, **Support Vector Regression** performed best overall, outperforming tree-based and distance-based models on all traits. This suggests that support vector methods are particularly effective for high-dimensional text data, and can capture subtle language patterns related to personality differences.
 
 Overall, the findings show that narrative text contains meaningful psychological information, but prediction remains modest, indicating that personality can be inferred from language to some extent, though not perfectly.
 
