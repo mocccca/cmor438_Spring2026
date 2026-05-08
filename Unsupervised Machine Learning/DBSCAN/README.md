@@ -66,9 +66,9 @@ DBSCAN(eps=1.5, min_samples=3)
 
 | eps | min_samples | n_clusters | noise_% | silhouette |
 |---|---|---|---|---|
-| 1.5 | 3 | 4 | 17.8% | −0.009 |
+| 1.5 | 3 | 4 | 17.8% | 0.0534 |
 
-This was the only parameter combination producing ≥ 2 clusters with noise < 30%. The near-zero silhouette score (−0.009) indicates minimal separation between clusters.
+This was the only parameter combination producing ≥ 2 clusters with noise < 30%. The near-zero silhouette score (0.0534) indicates minimal separation between clusters.
 
 ### Cluster Output
 - **Clusters found:** 4

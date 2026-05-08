@@ -17,18 +17,23 @@ cmor438_Spring2026/
 │   └── ml_models/
 │       ├── linear_regression.py
 │       ├── logistic_regression.py
+│       ├── perceptron.py
+│       ├── multi_perceptron.py
 │       ├── knn.py
 │       ├── svr.py
 │       ├── decision_tree.py
 │       ├── random_forest.py
 │       ├── gradient_boosting.py
 │       ├── pca.py
-│       └── k_means.py
+│       ├── k_means.py
+│       └── dbscan.py
 │
 
 ├── Supervised Machine Learning/
 │   ├── Linear Regression/
 │   ├── Logistic Regression/
+│   ├── perceptron.py
+│   ├── multi_perceptron.py
 │   ├── K-Nearest Neighbors/
 │   ├── Support Vector Regression/
 │   ├── Decision Trees/
@@ -45,6 +50,7 @@ cmor438_Spring2026/
 ├── datasets/
 ├── README.md
 └── requirements.txt
+```
 
 # Reusable Python Packages (src/ml_models/)
 
@@ -103,11 +109,10 @@ These analyses include:
     * Pearson correlation
     * accuracy / F1 (classification tasks)
 
-⸻
 
-Unsupervised Learning Methods
+# Unsupervised Learning Methods
 
-Principal Component Analysis (PCA)
+### Principal Component Analysis (PCA)
 
 PCA was used to:
 
@@ -117,7 +122,7 @@ PCA was used to:
 * interpret component loadings
 * visualize behavioral profiles through biplots and heatmaps
 
-K-Means Clustering
+### K-Means Clustering
 
 K-Means clustering was used to:
 
@@ -133,9 +138,15 @@ Clusters were then examined across:
 * age
 * gender
 
-⸻
+### DBSCAN Clustering
 
-Workflow
+DBSCAN clustering was used to:
+* identify naturally occurring groups and outliers
+* evaluate cluster structures using k-distance plots and parameter tuning
+* compare clustering solutions across different parameters
+* examine cluster patterns and demographic differences
+
+# Workflow
 
 The general workflow throughout the repository is:
 
@@ -155,29 +166,31 @@ The notebooks primarily focus on:
 
 while reusable code is modularized inside src/ml_models/.
 
-⸻
 
-Installation
+# Installation
 
-Create and activate a virtual environment:
+```bash
+python -m venv .venv
+source .venv/bin/activate
+```
 
-**Content**
+Install dependencies:
+```bash
+pip install -r requirements.txt
+```
 
-_Supervised Learning_
-- The Perceptron
-- Linear Regression
-- Logistic Regression
-- Multilayer Perceptron
-- K Nearest Neighbors
-- Decision Trees / Regression Trees
-- Random Forests
-- Linear and Non-linear SVR
-- Other Ensemble Methods, e.g., Boosting
+Install the repository in editable mode:
+```bash
+pip install -e .
+```
 
-_Unsupervised Learning_
-- K-Means Clustering
-- DBSCAN
-- Principal Component Analysis
+# Example Imports
+```python
+from ml_models.random_forest import RandomForestPersonality
+from ml_models.svr import SVRPersonality
+from ml_models.pca import PCAAnalysis
+from ml_models.k_means import KMeansAnalysis
+```
 
 **Dataset**
 

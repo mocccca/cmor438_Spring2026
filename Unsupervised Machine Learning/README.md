@@ -36,61 +36,76 @@ PCA was applied first to reveal the **underlying structure** of the 7-variable f
 | PC2 | 20.94% | 54.82% |
 | PC3 | 14.01% | 68.84% |
 | PC4 | 10.33% | 79.17% |
+| PC5 | 8.05% | 87.22% |
 
-**4 components were retained**, capturing 79.2% of total variance — just under the conventional 80% threshold. These components were saved as inputs for K-Means and DBSCAN.
+**5 components were retained**, capturing 87.2% of total variance. These components were saved as inputs for downstream clustering analyses.
 
 ### Component Interpretations
 
 **PC1 — Positive Adjustment (33.9%)**  
-Contrasts adaptive traits (Conscientiousness, Extraversion, Agreeableness) against stress-prone/counterproductive tendencies (Neuroticism, CWB). The dominant dimension in the data, reflecting a broad well-adjusted vs. stress-prone distinction consistent with Big Five theory.
+Contrasts adaptive personality traits (Conscientiousness, Extraversion, Agreeableness, and Openness) against maladaptive tendencies such as Neuroticism and CWB. This was the dominant dimension in the dataset, reflecting a broad continuum from psychologically adjusted and prosocial individuals to more stressed and counterproductive profiles.
 
 **PC2 — Behavioral Engagement (20.9%)**  
-Dominated by both OCB (0.596) and CWB (0.641) loading in the same positive direction — a notable finding suggesting that behavioral activation at work (whether prosocial or counterproductive) shares common variance, possibly reflecting extraversion-driven engagement.
+Primarily characterized by strong positive loadings from both OCB and CWB, suggesting that workplace behavioral activation — whether constructive or counterproductive — may share common variance. This component may reflect overall behavioral engagement or activity within organizational contexts.
 
 **PC3 — Openness/Emotional Reactivity (14.0%)**  
-Primarily driven by Openness (0.740) and Neuroticism (0.500), capturing intellectual curiosity and emotional reactivity independently of the first two components.
+Largely driven by Openness and Neuroticism, capturing a dimension associated with intellectual curiosity, emotional sensitivity, and internal reactivity independent of the broader adjustment dimension.
 
-**PC4 — Agreeableness/OCB (10.3%)**  
-Contrasts Agreeableness and OCB against Openness and Extraversion, potentially distinguishing cooperative/compliant individuals from independently minded ones.
+**PC4 — Agreeableness/Prosocial Orientation (10.3%)**  
+Characterized by strong positive loadings for Agreeableness and OCB while downplaying Openness and Extraversion. This component appears to reflect cooperative, relationship-oriented, and prosocial tendencies associated with workplace citizenship behavior.
+
+**PC5 — Conscientiousness/Task-Focused Regulation (8.1%)**  
+Primarily highlighted Conscientiousness alongside OCB while negatively loading on Extraversion and Agreeableness. This component may reflect a more disciplined, task-focused, and self-regulated behavioral profile emphasizing responsibility and productivity over interpersonal expressiveness.
 
 ### Biplot Finding
-The PCA biplot showed a **diffuse, elliptical participant scatter** with no visible gaps or discrete groupings — an early indication that personality variation in this sample is continuously distributed rather than type-based.
+
+The PCA biplot showed a relatively diffuse and overlapping participant distribution with no clear visual gaps or sharply separated groupings, suggesting that personality and workplace behavior variation in this sample is largely continuous rather than naturally categorical.
 
 ---
 
 ## K-Means Clustering
 
-K-Means was applied to the standardized raw features (7 variables) to identify natural personality groupings. As a robustness check, clustering was also performed on the 4-component PCA-reduced space; both approaches yielded the same optimal K, confirming result stability.
+K-Means clustering was applied to the standardized feature set to identify broad personality and workplace behavior profiles.
 
 ### Choosing K
 
 | Method | Result |
 |---|---|
 | Elbow method | Smooth decline — no sharp inflection point |
-| Silhouette score | Peaked at **K=2** (score = 0.237) |
+| Silhouette score | Peaked at **K=2** |
 
-The low silhouette score and absence of a clear elbow are consistent with the PCA biplot finding — no strongly separated natural clusters exist in this data.
+The absence of a strong elbow and the relatively modest silhouette structure are consistent with the PCA findings, suggesting that personality variation in this dataset is better understood dimensionally rather than as sharply distinct types.
 
-### Cluster Profiles (K=2)
+### Cluster Sizes
 
-| Trait | Cluster 0 — "Stressed/Disengaged" (n=315) | Cluster 1 — "Adjusted/Prosocial" (n=185) |
-|---|---|---|
-| Extraversion | 2.88 | 3.69 |
-| Agreeableness | 3.57 | 4.16 |
-| Conscientiousness | 3.31 | 4.21 |
-| Neuroticism | 3.23 | 2.27 |
-| Openness | 3.66 | 4.12 |
-| OCB | 2.62 | 3.02 |
-| CWB | 1.68 | 1.40 |
+| Cluster | n | % |
+|---|---:|---:|
+| 0 — Adjusted/Prosocial | 222 | 44.4% |
+| 1 — Younger/Stressed | 278 | 55.6% |
 
-**Cluster 0 — "Stressed/Disengaged" (n=315, 63%)**  
-Lower scores on all positive Big Five traits, elevated Neuroticism (3.23) and CWB (1.68), lower OCB (2.62). Younger on average (M=25.1 years), 56.8% women.
+### Cluster Profiles
 
-**Cluster 1 — "Adjusted/Prosocial" (n=185, 37%)**  
-Higher Conscientiousness (4.21), Agreeableness (4.16), and Extraversion (3.69), markedly lower Neuroticism (2.27), higher OCB (3.02), lower CWB (1.40). Older on average (M=30.5 years), more gender-balanced.
+| Trait | Cluster 0 | Cluster 1 |
+|---|---:|---:|
+| Extraversion | 3.62 | 2.82 |
+| Agreeableness | 4.08 | 3.55 |
+| Conscientiousness | 4.15 | 3.23 |
+| Neuroticism | 2.36 | 3.29 |
+| Openness | 4.08 | 3.63 |
+| OCB | 3.01 | 2.58 |
+| CWB | 1.45 | 1.67 |
+
+**Cluster 0 — "Adjusted/Prosocial"**  
+Higher scores across positive Big Five traits, especially Conscientiousness (4.15), Agreeableness (4.08), and Openness (4.08), alongside lower Neuroticism (2.36) and lower CWB (1.45). This cluster appears more emotionally stable, cooperative, and organizationally engaged. Participants in this cluster were also older on average (M = 29.82 years).
+
+**Cluster 1 — "Younger/Stressed"**  
+Lower scores across adaptive Big Five traits alongside elevated Neuroticism (3.29) and higher CWB (1.67). Lower OCB (2.58) also suggests reduced workplace citizenship behavior. Participants in this cluster were younger on average (M = 24.98 years), potentially reflecting developmental differences in personality stability and workplace adjustment.
 
 ### Age & Gender Differences
-The 5.4-year age gap between clusters is consistent with the **maturity principle** in personality development — Conscientiousness and Agreeableness tend to increase while Neuroticism decreases across adulthood (Roberts et al., 2006). Gender differences were modest and should be interpreted cautiously given the correlational design.
+
+The approximately 4.8-year age gap between clusters is consistent with the **maturity principle** in personality development, where Conscientiousness and Agreeableness tend to increase while Neuroticism decreases across adulthood (Roberts et al., 2006).
+
+Gender distributions were relatively balanced across clusters, although Cluster 1 contained a somewhat higher proportion of women (56.8%) relative to Cluster 0 (50.0%), potentially aligning with commonly observed small gender differences in Neuroticism.
 
 ---
 
@@ -104,7 +119,7 @@ A two-stage grid search was conducted:
 2. **Stage 2** (min_samples ∈ [3, 5, 7, 10], eps ∈ [1.0, 2.5]): One meaningful combination found
 
 **Final parameters:** `eps=1.5, min_samples=3`  
-**Silhouette score:** −0.009 (near zero)
+**Silhouette score:** 0.0534 (near zero)
 
 ### Cluster Output
 

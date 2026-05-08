@@ -8,7 +8,7 @@ from sklearn.model_selection import KFold
 from sklearn.metrics import mean_absolute_error, r2_score
 
 
-class DecisionTreePersonality:
+class DecisionTree:
     """
     Reusable Decision Tree regression model for predicting Big Five
     personality traits from free-text narrative responses.
